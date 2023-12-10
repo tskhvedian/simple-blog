@@ -14,6 +14,13 @@ async function getData() {
   return res.json();
 }
 
+export const metadata = {
+  title: "Unique Learning Website",
+  description: "Blog Page",
+};
+
+
+
 const Blog = async () => {
   const data = await getData();
   return (

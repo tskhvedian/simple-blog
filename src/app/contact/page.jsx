@@ -2,6 +2,13 @@ import Image from "next/image";
 import styles from "./contact.module.css";
 import Button from "@/components/Button/button";
 
+
+export const metadata = {
+  title: "Unique Learning Website",
+  description: "Contact Page",
+};
+
+
 const Contact = () => {
   return (
     <div className={styles.container}>
