@@ -22,4 +22,5 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("user", userSchema); //model name user and we pass the schema. it will create user in Db
+//If the User collection does not exist create a new one.
+export default mongoose.models.User || mongoose.model("User", userSchema);
